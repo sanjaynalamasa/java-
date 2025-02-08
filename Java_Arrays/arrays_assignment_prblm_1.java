@@ -1,20 +1,26 @@
 public class arrays_assignment_prblm_1 {
-    public static void Ass(int nums[]) {
-        for(int i=1; i<nums.length; i++) {
-           int temp = nums[0];
-           if(nums[i] == temp) {
-            System.out.println("true");
-            temp++;
-           }
-           else {
-            System.out.println("false");
-           }
+    public static boolean Ass(int nums[]) {
+        //Approach 2 :-
+       for(int i=0; i<nums.length-1; i++) {
+        int temp = nums[i];
+        if(nums[i] == temp) {
+            return true;
         }
+        temp++;
 
+   //approach 1 :- Brute Force
 
+        // for(int j=i+1; j<nums.length; j++) {
+        //     if(nums[i] == nums[j]) {
+        //         return true;
+        //     }
+
+        // }
+     }
+     return false;
     }
     public static void main(String[] args) {
-        int nums[] = {1,5,3,0};
+        int nums[] = {1,5,1,0};
         Ass(nums);
     }
     
