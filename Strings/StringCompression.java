@@ -1,5 +1,5 @@
 public class StringCompression {
-    public static String Comparision(String str) {
+    public static String Compression(String str) {
         // String newstr = " ";
         StringBuilder sb = new StringBuilder(" ");
         for(int i=0; i<str.length(); i++) {
@@ -20,7 +20,7 @@ public class StringCompression {
     }
     public static void main(String[] args) {
         String str = "aaabbcccdd";
-        System.out.println(Comparision(str));
+        System.out.println(Compression(str));
         
     }
     
