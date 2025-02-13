@@ -1,17 +1,18 @@
 public class palindrome_string {
-    public static void Palindrom(String str) {
-        String n = str.length()-1;
+    public static boolean Palindrom(String str) {
+        int n = str.length();
         for(int i=0; i<str.length()/2; i++) {
-            if(str(i) == str(n-i-1)) {
-
+            if(str.charAt(i)  != str.charAt(n-1-i)) {
+            //    System.out.println("Not A Palindrome");
+                return false;
             }
-x           
         }
+        // System.out.println("A Palindrome");
+        return true;
     }
    
     public static void main(String[] args) {
         String str = "madam";
-        Palindrom(str);
-    
+       System.out.println(Palindrom(str));
     }
 }
