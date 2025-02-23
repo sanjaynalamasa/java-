@@ -1,13 +1,3 @@
-class ChaiShop {
-    static int cnt = 0;
-    int bnt = 0;
-
-    //static method
-    static void fun() {
-        System.out.println(1);
-    }
-}
-
 
 class Random {
     public static void main(String args[]) {
@@ -22,9 +12,16 @@ class Random {
 
           //calling ChaiShop
         ChaiShop.fun();
-        
 
+    }
+}
 
+class ChaiShop {
+    static int cnt = 0;
+    int bnt = 0;
 
+    //static method
+    static void fun() {
+        System.out.println(1);
     }
 }
